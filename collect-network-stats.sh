@@ -4,7 +4,7 @@ PREFIX="network"
 
 # 1. NIC statistics
 
-nic_stats_output() {
+eth_stats_output() {
     NIC=$1
     METRIC=$PREFIX"_nic_stats";
 
@@ -15,7 +15,7 @@ nic_stats_output() {
     done
 }
 
-nic_stats_output eth0
+eth_stats_output eth0
 
 interrupts_output() {
     PATTERN=$1
